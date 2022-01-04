@@ -4,7 +4,7 @@
   font-family: sans-serif;
 }
 .heading {
-  color: rebeccapurple;
+  color: darkblue;
 }
 .nav-links {
   display: flex;
@@ -22,4 +22,12 @@
   color: gray;
   font-weight: 700;
   margin: 3rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }

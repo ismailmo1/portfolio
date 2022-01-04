@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+}
+
+.container {
+  background-image: url(https://images.unsplash.com/photo-1599159876544-8bd9fbab6196?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8);
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  color: white;
+  font-size: xxx-large;
+  flex-direction: column;
+}
+
+.linkedinIcon:hover {
+  color: rgb(10, 102, 194);
+}
+
+.githubIcon:hover {
+  color: grey;
+}
+
+.siteLinks a {
+  margin-left: 2rem;
+  font-size: xx-large;
+  color: white;
+  text-decoration: none;
+}
+
+.siteLinks a:hover {
+  text-decoration: underline;
+}
+
+.socialLinks a {
+  margin-left: 1rem;
+  font-size: xx-large;
+  color: white;
+  text-decoration: none;
+}

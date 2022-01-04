@@ -1,0 +1,22 @@
+---
+description: Python app for speeding up windows file search using multi-threading
+name: "Fast-File-Search"
+priority: 1
+hero_image: "windows-search.jpg"
+hero_image_alt: "windows native file search"
+---
+
+---
+
+A tkinter (python) app to speed up file search using multi-threading
+
+---
+
+[App Code](https://github.com/ismailmo1/cert_folder_search) /
+[File Search Code](https://github.com/ismailmo1/multithread_oswalk)
+
+Searching for files on windows can take an awful amount of time and when none of the [guidelines](https://docs.microsoft.com/en-us/troubleshoot/windows-client/shell-experience/windows-search-performance-issues) for speeding up search helped, I had to build something.
+
+Luckily, there was some order in the folder structure and the newer file paths had some more logic built in to them that helped narrow the search space. However older file paths were all over the place (before the realisation to organise kicked in) and walking the entire directory of ~20k folders was not an option.
+
+The approach taken was to build a one off "index" of files and load this into the app, so the long file search operation only had to be done once. Admittedly the "index" was out of date as soon as it was generated (there's no way I was beating window's search index), but everyone using the file server was forced to sign a contract to comply with the folder naming conventions - people, process, technology right? 🙂

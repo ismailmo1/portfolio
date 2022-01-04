@@ -3,13 +3,17 @@ import * as React from 'react';
 import Layout from '../../components/layout';
 
 const ProjectsPage = ({ data }) => {
-  console.log(data);
+
+  data.allMdx.nodes.map((node) => {
+
+    console.log(node)
+  });
   return (
     <Layout pageTitle='My projects'>
       {data.allMdx.nodes.map((node) => {
         return (<article key={node.id} >
           <h2><Link to={`/projects/${node.slug}`}>{node.frontmatter.name}</Link></h2>
-          <p>Posted: {node.parent.birthTime}</p>
+          <p>{node.frontmatter.description}</p>
         </article>)
       })}
     </Layout >
@@ -22,6 +26,7 @@ query {
       nodes {
         frontmatter {
           name
+          description
         }
         id
         slug       

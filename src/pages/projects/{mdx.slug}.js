@@ -5,11 +5,9 @@ import * as React from 'react';
 import Layout from '../../components/layout';
 
 const ProjectPost = ({ data }) => {
-  // console.log(data)
   const image = getImage(data.mdx.frontmatter.hero_image)
   return (
     <Layout pageTitle={data.mdx.frontmatter.name}>
-      <p>Posted: {data.mdx.parent.birthTime}</p>
       <GatsbyImage image={image} alt={data.mdx.frontmatter.hero_image_alt} />
       <MDXRenderer>
         {data.mdx.body}
