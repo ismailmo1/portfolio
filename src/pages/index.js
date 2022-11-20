@@ -13,7 +13,7 @@ const IndexPage = () => {
       <p> Ismail Mohammed</p>
       <div className={siteLinks}>
         <a href="/about">About</a>
-        <a href="blog.ismailmo.com">Blog</a>
+        <a href="https://blog.ismailmo.com">Blog</a>
         <a href="/projects">Projects</a>
       </div>
       <div className={socialLinks}>
